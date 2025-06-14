@@ -1,6 +1,6 @@
-# ☕ Cafe Sales Analysis & Forecasting
+# ☕ Cafe Sales Forecasting & Recommendation System
 
-This project applies data science techniques to analyze and forecast cafe sales. It includes predictive modeling, sales trend analysis, product clustering, and a recommendation system to support decision-making for small cafes and food businesses.
+This project applies data science techniques to analyzes and forecasts sales trends for a cafe using transactional data. It includes **sales prediction**, **regional sales analysis**, **product clustering**, and a **recommendation system**, offering practical insights for improving operations, inventory, and marketing strategies.
 
 ---
 
@@ -21,8 +21,7 @@ This project applies data science techniques to analyze and forecast cafe sales.
   - [Product Clustering Analysis](#product-clustering-analysis)  
   - [Product Recommendation System](#product-recommendation-system)  
 - [Key Insights](#key-insights)  
-- [Folder Structure](#folder-structure)  
-- [Conclusion](#conclusion)
+- [Conclusion](#conclusion)  
 
 ---
 
@@ -67,16 +66,18 @@ The findings help:
 - Includes sales details by item, location, and date
 
 ### Preprocessing and Data Cleaning
-- Removed missing/inconsistent values
-- Handled missing values with median/mode imputation
-- Unified labels (e.g., "tea", "TEA" → "TEA")
+- Handled missing values:
+  - **Mode** for categorical
+  - **Median** for numerical
+- Converted dates to `datetime`, encoded categories
 - Removed duplicates and outliers
-- Transformed skewed variables (e.g., log1p on `Total Spent`)
-- Extracted time-based features from date
+- Unified category labels (e.g., "tea", "TEA" → "TEA")
+- Applied `log1p` transformation to handle skew in `Total Spent`
+- Extracted time-based features like day, month, and year
 
 ### Methods of Analysis
 - Exploratory Data Analysis (EDA)
-- Time Series Forecasting
+- Regression Forecasting
 - K-Means Clustering
 - Content-Based Recommendation System
 
@@ -99,13 +100,19 @@ The findings help:
 
 #### Train-Test Split & Model Selection
 - Time-aware train-test split
-- Models:
-  - `Linear Regression`
-  - `Random Forest Regressor`
-- Best Model:
-  - **Random Forest**
-    - R² Score: **0.899**
-    - MSE: **0.0358**
+#### Models Used:
+- Linear Regression
+- Random Forest Regressor
+- Decision Tree Regressor
+
+#### Evaluation Metrics:
+| Model             | R² Score | MSE     |
+|------------------|----------|---------|
+| Random Forest     | 0.899    | 0.0358  |
+| Decision Tree     | 0.795    | 0.0726  |
+| Linear Regression |0.8786    |0.04310  |
+
+**Random Forest** showed superior performance in predicting `Total Spent` compared to the simpler Decision Tree and Linear Regression.
 
 ---
 
@@ -122,25 +129,27 @@ To compare performance across different locations and support regional planning.
 | In-Store   | 5,818.34    | 2.98         | **−12%**       |
 
 - Takeaway channels are growing significantly.
-- In-store traffic is declining.
+- In-store traffic is declining,indicating areas to improve service or marketing.
 
 ---
 
-### 🧊 Product Clustering Analysis
+### 🧪 Product Clustering Analysis
 
 #### Methodology & Results
-- Applied K-Means clustering based on:
-  - Total Quantity Sold
-  - Frequency of Purchase
-  - Total Revenue
+- Clustered items by:
+  - Total quantity
+  - Purchase frequency
+  - Revenue
+- Applied K-Means Clustering
 - Used Elbow Method to determine optimal K
 - **Silhouette Score**: 0.35
 
-| Cluster | Items                    | Avg Revenue | Category        |
+| Cluster | Items                    | Avg Revenue | Type            |
 |---------|--------------------------|-------------|-----------------|
 | 1       | Juice                    | 4,335.89    | 🏆 Top Performer |
 | 2       | Coffee, Cake, Sandwich   | ~2,369      | 🎯 Mid Tier      |
-| 0       | Tea, Cookie              | 1,549.18    | 🚨 Low Performer |
+| 0       | Tea, Cookie              | 1,549.18    | ⚠️ Low Performer |
+-Silhouette Score: **0.35** (moderate separation)
 
 ---
 
@@ -170,16 +179,20 @@ If a customer buys a **Sandwich**, recommend:
 ## 📈 Key Insights
 
 - ✅ **Random Forest** outperforms Linear Regression for predicting total sales.
+- ✅ The **Decision Tree** model, while simpler, underperformed (R² = 0.795, MSE = 0.0726)
 - 📈 **Takeaway** sales show strong positive growth.
+- 📈 **Takeaway** sales channels dominate, while **In-Store** channels are declining.
 - 🍹 **Juice** is the highest-performing product.
-- 🍪 **Tea** and **Cookie** underperform and may need pricing/menu optimization.
+- 🍚 **Tea** and **Cookie** underperform and may need pricing/menu optimization.
+- 📈 Product bundling opportunities are clearly supported by the **recommendation system** and **clustering analysis**.
 - 🍰 **Sandwich** pairs well with other high-volume products—ideal for promotions.
 
 ---
 
 ## Conclusion
 
-This project offers a complete analytical framework to improve sales forecasting, product strategy, and customer insights for cafes. The insights derived help in:
+This study demonstrates the practical application of machine learning in optimizing operations within the food and beverage industry. From data preprocessing to predictive modeling, regional sales analysis, product clustering, and recommendation systems, each component contributes to a data-driven understanding of customer behavior and sales trends.
+This project offers a complete analytical framework to improve sales forecasting,improve operational efficiency, and profitability through intelligent analytics,product strategy, and customer insights for cafes. The insights derived help in:
 - Reducing inventory waste
 - Boosting revenue
 - Enhancing customer satisfaction
