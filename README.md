@@ -149,6 +149,7 @@ To compare performance across different locations and support regional planning.
 | 1       | Juice                    | 4,335.89    | 🏆 Top Performer |
 | 2       | Coffee, Cake, Sandwich   | ~2,369      | 🎯 Mid Tier      |
 | 0       | Tea, Cookie              | 1,549.18    | ⚠️ Low Performer |
+
 -Silhouette Score: **0.35** (moderate separation)
 
 ---
@@ -180,11 +181,9 @@ If a customer buys a **Sandwich**, recommend:
 
 - ✅ **Random Forest** outperforms Linear Regression for predicting total sales.
 - ✅ The **Decision Tree** model, while simpler, underperformed (R² = 0.795, MSE = 0.0726)
-- 📈 **Takeaway** sales show strong positive growth.
-- 📈 **Takeaway** sales channels dominate, while **In-Store** channels are declining.
+- 📈 **Takeaway** sales show strong positive growth, while **In-Store** channels are declining.
 - 🍹 **Juice** is the highest-performing product.
 - 🍚 **Tea** and **Cookie** underperform and may need pricing/menu optimization.
-- 📈 Product bundling opportunities are clearly supported by the **recommendation system** and **clustering analysis**.
 - 🍰 **Sandwich** pairs well with other high-volume products—ideal for promotions.
 
 ---
@@ -192,7 +191,7 @@ If a customer buys a **Sandwich**, recommend:
 ## Conclusion
 
 This study demonstrates the practical application of machine learning in optimizing operations within the food and beverage industry. From data preprocessing to predictive modeling, regional sales analysis, product clustering, and recommendation systems, each component contributes to a data-driven understanding of customer behavior and sales trends.
-This project offers a complete analytical framework to improve sales forecasting,improve operational efficiency, and profitability through intelligent analytics,product strategy, and customer insights for cafes. The insights derived help in:
+It's offers a complete analytical framework to improve sales forecasting,improve operational efficiency, and profitability through intelligent analytics,product strategy, and customer insights for cafes. The insights derived help in:
 - Reducing inventory waste
 - Boosting revenue
 - Enhancing customer satisfaction
