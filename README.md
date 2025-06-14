@@ -5,29 +5,29 @@ This project applies data science techniques to analyzes and forecasts sales tre
 ---
 
 ## 📌 Table of Contents
-- [Introduction](#📖 introduction)  
-  - [Background](#background)  
-  - [Problem Statement](#problem-statement)  
-  - [Objective](#objective)  
-  - [Significance of Project](#significance-of-project)  
+- [Introduction](#introduction)  
+  - Background
+  - Problem Statement
+  - Objective
+  - Significance of Project  
 - [Approach](#approach)  
-  - [Data Collection](#data-collection)  
-  - [Preprocessing and Data Cleaning](#preprocessing-and-data-cleaning)  
-  - [Methods of Analysis](#methods-of-analysis)  
-  - [Tools Used](#tools-used)  
+  - Data Collection 
+  - Preprocessing and Data Cleaning 
+  - Methods of Analysis
+  - Tools Used 
 - [Modeling](#modeling)  
-  - [Predictive Modeling](#predictive-modeling)  
-  - [Sales Analysis by Region](#sales-analysis-by-region)  
-  - [Product Clustering Analysis](#product-clustering-analysis)  
-  - [Product Recommendation System](#product-recommendation-system)  
+  - Predictive Modeling  
+  - Sales Analysis by Region  
+  - Product Clustering Analysis  
+  - Product Recommendation System  
 - [Key Insights](#key-insights)  
 - [Conclusion](#conclusion)  
 
 ---
 
-## 📖 Introduction
+## Introduction
 
-### Background
+### 📖 Background
 The dataset, obtained from Kaggle, contains transactional records from a cafe. Each entry includes item name, quantity sold, unit price, total amount, payment type, location, and date of sale.
 
 ### Problem Statement
