@@ -5,7 +5,7 @@ This project applies data science techniques to analyzes and forecasts sales tre
 ---
 
 ## 📌 Table of Contents
-- [Introduction](#introduction)  
+- [Introduction](#📖 introduction)  
   - [Background](#background)  
   - [Problem Statement](#problem-statement)  
   - [Objective](#objective)  
@@ -59,7 +59,7 @@ The findings help:
 
 ---
 
-## 🚀 Approach
+## Approach
 
 ### Data Collection
 - Sourced from Kaggle
@@ -90,7 +90,7 @@ The findings help:
 
 ---
 
-## 🧠 Modeling
+## Modeling
 
 ### 🔮 Predictive Modeling
 
@@ -133,7 +133,7 @@ To compare performance across different locations and support regional planning.
 
 ---
 
-### 🧪 Product Clustering Analysis
+## Product Clustering Analysis
 
 #### Methodology & Results
 - Clustered items by:
@@ -177,7 +177,7 @@ If a customer buys a **Sandwich**, recommend:
 
 ---
 
-## 📈 Key Insights
+## Key Insights
 
 - ✅ **Random Forest** outperforms Linear Regression for predicting total sales.
 - ✅ The **Decision Tree** model, while simpler, underperformed (R² = 0.795, MSE = 0.0726)
