@@ -150,7 +150,7 @@ To compare performance across different locations and support regional planning.
 | 2       | Coffee, Cake, Sandwich   | ~2,369      | 🎯 Mid Tier      |
 | 0       | Tea, Cookie              | 1,549.18    | ⚠️ Low Performer |
 
--Silhouette Score: **0.35** (moderate separation)
+- Silhouette Score: **0.35** (moderate separation)
 
 ---
 
